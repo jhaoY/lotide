@@ -6,15 +6,11 @@ const assertEqual = function(actual, expected) {
   }
 };
 
-let head = function (arr) {
+const head = function(arr) {
   if (arr.length > 0) {
     let firstValue = arr[0];
     return firstValue;
   } else {
     return;
   }
-}
-
-assertEqual(head([5]), 5);
-assertEqual(head(["Hello", "Lighthouse", "Labs"]), "Hello");
-assertEqual(head(5), 5);
+};
