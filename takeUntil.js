@@ -18,7 +18,7 @@ const assertArraysEqual = function(actual, expected) {
   }
 };
 
-const takeUntil = function (array, callback) {
+const takeUntil = (array, callback) => {
   let result = []
   for (val of array) {
     if (!callback(val)) {
@@ -44,3 +44,5 @@ console.log(results2);
 
 assertArraysEqual(results1, [1,2,5,7,2]);
 assertArraysEqual(results2, ["I've","been","to","Hollywood"]);
+
+module.exports = takeUntil;

@@ -28,3 +28,5 @@ assertEqual((findKey(values, x => x.stars === 2)), "noma");
 assertEqual((findKey(values, x => x.stars === 3)), "Akaleri");
 assertEqual((findKey(values, x => x.stars === 1)), "Blue Hill");
 assertEqual((findKey(values, x => x.stars === 0)), "No key found");
+
+module.exports = findKey;
